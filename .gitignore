@@ -1,0 +1,24 @@
+# Ignore everything except for .gitignore and wp-content
+/*
+!.gitignore
+!README.md
+!wp-content
+
+wp-content/*
+!wp-content/themes
+!wp-content/plugins
+!wp-content/mu-plugins
+ 
+wp-content/plugins/*
+!wp-content/plugins/are-you-paying-attention
+!wp-content/plugins/featured-professor
+!wp-content/plugins/pet-adoption
+!wp-content/plugins/word-count-plugin
+!wp-content/plugins/word-filter-plugin
+
+wp-content/themes/*
+!wp-content/themes/fictional-university-theme
+!wp-content/themes/fictional-university-block-theme
+
+node_modules
+build

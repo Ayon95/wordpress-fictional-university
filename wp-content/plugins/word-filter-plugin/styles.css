@@ -1,0 +1,14 @@
+.word-filter__form {
+  margin-top: 1rem;
+}
+
+.word-filter__form-group label {
+  display: block;
+  margin-bottom: 0.6rem;
+}
+
+.word-filter__form-group textarea {
+  width: 100%;
+  min-height: 10rem;
+  margin-bottom: 1rem;
+}

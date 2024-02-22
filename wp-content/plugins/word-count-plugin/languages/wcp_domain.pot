@@ -1,0 +1,35 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Word Count Plugin\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-01-15 23:24+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: \n"
+"Language: \n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Loco-Version: 2.6.6; wp-6.4.2\n"
+"X-Domain: wcp_domain"
+
+#. Author URI of the plugin
+msgid "https://mdmushfiqrahman.com"
+msgstr ""
+
+#. Author of the plugin
+msgid "Mushfiq"
+msgstr ""
+
+#. Description of the plugin
+msgid ""
+"Shows post statistics such as word count, character count, and estimated "
+"time to finish reading a post"
+msgstr ""
+
+#. Name of the plugin
+msgid "Word Count Plugin"
+msgstr ""

@@ -1,0 +1,21 @@
+.link-list {
+  li {
+    font-size: 1.5rem;
+
+    .search-overlay & {
+      font-size: 1.3rem;
+    }
+  }
+
+  li:not(:last-child) {
+    margin-bottom: 0.5rem;
+  }
+
+  li:last-child {
+    border-bottom: none;
+  }
+
+  a {
+    color: $darkOrange;
+  }
+}

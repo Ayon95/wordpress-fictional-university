@@ -1,0 +1,13 @@
+// Styles for Word Count Plugin
+
+.wcp-post-statistics {
+  margin-top: 2rem;
+
+  h2 {
+    font-size: clamp(2.4rem, 6vw, 3.2rem);
+  }
+
+  > p:not(:last-child) {
+    margin-bottom: 0.7rem;
+  }
+}

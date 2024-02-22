@@ -1,0 +1,137 @@
+.aypa-frontend {
+  overflow: hidden;
+  position: relative;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.03);
+  border: 1px solid #dbdbdb;
+  padding: 20px;
+  border-radius: 4px;
+  margin-top: 35px;
+  margin-bottom: 35px;
+
+  &__question {
+    font-size: 1.55rem !important;
+    margin-bottom: 15px !important;
+  }
+
+  &__answers {
+    margin: 0;
+    padding: 0;
+    @media screen and (min-width: 767px) {
+      margin: 0 -20px 0 0;
+      display: flex;
+    }
+  }
+
+  &__answer {
+    list-style: none;
+    flex: 1;
+    margin-bottom: 15px;
+
+    @media screen and (min-width: 767px) {
+      margin-right: 20px;
+    }
+
+    border-radius: 4px;
+
+    button {
+      width: 100%;
+      padding: 10px;
+      background-color: rgba(255, 255, 255, 0.7);
+      border: none;
+      font-size: 0.93rem;
+      cursor: pointer;
+    }
+
+    button:hover:not(:disabled) {
+      background-color: rgba(255, 255, 255, 0.95);
+    }
+
+    button:disabled {
+      cursor: not-allowed;
+    }
+
+    svg {
+      margin-right: 5px;
+      margin-bottom: -5px;
+    }
+
+    &--correct {
+      svg {
+        fill: rgb(0, 158, 47);
+      }
+    }
+
+    &--incorrect {
+      svg {
+        fill: rgb(235, 0, 0);
+      }
+    }
+  }
+
+  .faded {
+    opacity: 0.5;
+  }
+
+  .message {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    visibility: hidden;
+    transform: scale(1.35);
+    transition: all 0.33s ease-out;
+    transform-origin: 50% 50%;
+
+    &--correct {
+      background-color: rgb(156, 226, 177);
+    }
+
+    &--incorrect {
+      background-color: rgb(224, 176, 176);
+    }
+
+    &--visible {
+      animation: 2.6s showModal;
+    }
+
+    svg {
+      margin-right: 12px;
+    }
+
+    p {
+      margin: 0 !important;
+    }
+  }
+}
+
+@keyframes showModal {
+  0% {
+    opacity: 0;
+    visibility: hidden;
+    transform: scale(1.2);
+  }
+
+  15% {
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1);
+  }
+
+  85% {
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1);
+  }
+
+  100% {
+    opacity: 0;
+    visibility: hidden;
+    transform: scale(1.2);
+  }
+}
